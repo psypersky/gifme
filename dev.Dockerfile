@@ -8,4 +8,8 @@ RUN pip install -r /requirements.txt
 COPY app/ /app
 WORKDIR /app
 
-CMD ["env", "FLASK_APP=hello.py", "flask", "run", "--host", "0.0.0.0"]
+ENV FLASK_ENV development
+
+# CMD ["env", "FLASK_APP=hello.py", "flask", "run", "--host", "0.0.0.0"]
+
+CMD ["python3", "server.py"]

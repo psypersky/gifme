@@ -12,5 +12,7 @@
 - [x] create and deploy ping endpoint
 - [x] how to create a slash commands slack bot?
 - [x] create /ping slash command in slack
+- [ ] create /bale endpoint and return images based on keywords
+- [ ] https://pipenv-fork.readthedocs.io/en/latest/
 - [ ] read more about aws vpcs
 - [ ] read more about aws iam

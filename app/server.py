@@ -27,7 +27,12 @@ curl -d "param1=value1&param2=value2" -X POST http://localhost:3000/data
 def bale():
     return jsonify(
         response_type='in_channel',
-        image_url='https://gifme-public.s3.us-east-2.amazonaws.com/ezgif.com-gif-maker.gif',
+        attachments=[
+            {
+                "fallback": "sad but true gif image",
+                "image_url": "https://gifme-public.s3.us-east-2.amazonaws.com/ezgif.com-gif-maker.gif"
+            }
+        ]
     )
 
 

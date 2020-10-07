@@ -14,8 +14,11 @@
 - [x] create /ping slash command in slack
 - [x] create /bale endpoint and test image attachments
 - [x] get some britney pictures
-- [ ] Boilerplate for Flask
+- [x] find out the most Flasky way to structure a Flask project
+- [ ] public blueprint
+- [ ] image blueprint
 - [ ] Move to Fargate
+- [ ] slack authentication
 - [ ] https://pipenv-fork.readthedocs.io/en/latest/
 - [ ] read more about aws vpcs
 - [ ] read more about aws iam

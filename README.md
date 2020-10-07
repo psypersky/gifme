@@ -4,19 +4,37 @@ A slack bot
 
 ## Features
 
-Server
+### Server
 
-- [ ] Slack authentication
-- [x] Slack command /ping
-- [ ] Slack command /img bucket image-name
-- [ ] Setup admin by env
-- [ ] POST /user/create (admin only)
-- [ ] POST /user/delete (admin only)
-- [ ] POST /image
+**health**   
+`POST /health/ping - slack-auth - Slack /ping`   
+`GET /health/check - public`  
 
-CLI
+**auth**  
+`POST /auth/slack/pin - slack-auth - Slack /login`  
+`POST /auth/cli/login - public`  
 
-- [ ] 
+**image**  
+`POST /image/slack/cmd - slack-auth - Slack /gifme`  
+`  Slack /gifme ls`  
+`  Slack /gifme <bucket> ls`  
+`  Slack /gifme <bucket> <image-name>`  
+`POST image/cli/bucket/upload - user-auth`  
+
+### CLI
+
+Install script
+
+`TODO: script to install cli`
+
+```sh
+gifme login
+    pin: 2736
+successfully logged in to Gifme Bot
+
+gifme image upload <bucket-name> <image-name> <filename>
+gifme image delete <bucket-name> <image-name>
+```
 
 ## Dev
 

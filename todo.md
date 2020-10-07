@@ -13,8 +13,14 @@
 - [x] how to create a slash commands slack bot?
 - [x] create /ping slash command in slack
 - [x] create /bale endpoint and test image attachments
+- [x] get some britney pictures
 - [ ] Boilerplate for Flask
 - [ ] Move to Fargate
 - [ ] https://pipenv-fork.readthedocs.io/en/latest/
 - [ ] read more about aws vpcs
 - [ ] read more about aws iam
+
+Check later
+
+Flask production - https://vsupalov.com/flask-web-server-in-production/ 
+Greenlets vs threads - https://stackoverflow.com/questions/15556718/greenlet-vs-threads

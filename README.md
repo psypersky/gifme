@@ -1,5 +1,23 @@
 # Gifme
 
+A slack bot
+
+## Features
+
+Server
+
+- [ ] Slack authentication
+- [x] Slack command /ping
+- [ ] Slack command /img bucket image-name
+- [ ] Setup admin by env
+- [ ] POST /user/create (admin only)
+- [ ] POST /user/delete (admin only)
+- [ ] POST /image
+
+CLI
+
+- [ ] 
+
 ## Dev
 
 __Build__

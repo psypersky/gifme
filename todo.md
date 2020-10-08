@@ -15,15 +15,18 @@
 - [x] create /bale endpoint and test image attachments
 - [x] get some britney pictures
 - [x] find out the most Flasky way to structure a Flask project
-- [ ] public blueprint
-- [ ] image blueprint
+- [x] redefine the api
+- [ ] new foldering/blueprint structure
 - [ ] Move to Fargate
 - [ ] slack authentication
 - [ ] https://pipenv-fork.readthedocs.io/en/latest/
 - [ ] read more about aws vpcs
 - [ ] read more about aws iam
 
+- [ ] https://packaging.python.org/guides/installing-stand-alone-command-line-tools/
+
 Check later
 
 Flask production - https://vsupalov.com/flask-web-server-in-production/ 
 Greenlets vs threads - https://stackoverflow.com/questions/15556718/greenlet-vs-threads
+https://auth0.com/blog/critical-vulnerabilities-in-json-web-token-libraries/

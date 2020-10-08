@@ -42,11 +42,13 @@ __Build__
 `docker build -f dev.Dockerfile -t gifme-dev .`
 
 __Run locally__
-`docker run -it -p 5000:5000 -v $(pwd)/app/:/app gifme-dev`
+`docker run -it -p 5000:5000 -v $(pwd):/gifme gifme-dev`
 
 curl localhost:5000
 
-curl -X POST localhost:5000/ping
+curl -X POST localhost:5000/health/ping
+
+curl localhost:5000/health/check
 
 curl -X POST localhost:5000/bale
 

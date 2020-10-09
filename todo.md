@@ -16,12 +16,21 @@
 - [x] get some britney pictures
 - [x] find out the most Flasky way to structure a Flask project
 - [x] redefine the api
-- [ ] new foldering/blueprint structure
-- [ ] Move to Fargate
+- [x] new foldering/blueprint structure
+- [ ] Create script using aws cli to create cluster, task definition, service, and deploy
 - [ ] slack authentication
-- [ ] https://pipenv-fork.readthedocs.io/en/latest/
-- [ ] read more about aws vpcs
-- [ ] read more about aws iam
+- [ ] Add load balancer, and deploy using default vpc
+- [ ] cloudwatch logs
+- [ ] play with aws vpcs scripts
+- [ ] play with aws iam scripts
+- [ ] use pipenv to run commands https://pipenv-fork.readthedocs.io/en/latest/
+
+- [ ] ECS CLI V2
+https://aws.amazon.com/blogs/containers/announcing-the-amazon-ecs-cli-v2/
+https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-cli-tutorial-fargate.html
+
+- [ ] Use cloud formation
+https://github.com/aws-samples/ecs-refarch-cloudformation
 
 - [ ] https://packaging.python.org/guides/installing-stand-alone-command-line-tools/
 
@@ -29,4 +38,5 @@ Check later
 
 Flask production - https://vsupalov.com/flask-web-server-in-production/ 
 Greenlets vs threads - https://stackoverflow.com/questions/15556718/greenlet-vs-threads
-https://auth0.com/blog/critical-vulnerabilities-in-json-web-token-libraries/
+Async Flask - https://pgjones.gitlab.io/quart/index.html
+JSON web tokens vuln - https://auth0.com/blog/critical-vulnerabilities-in-json-web-token-libraries/

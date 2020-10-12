@@ -17,7 +17,8 @@
 - [x] find out the most Flasky way to structure a Flask project
 - [x] redefine the api
 - [x] new foldering/blueprint structure
-- [ ] Create script using aws cli to create cluster, task definition, service, and deploy
+- [x] create cluster, task definition, service and deploy with aws cli
+- [ ] abstract script to do all aws work with cli
 - [ ] slack authentication
 - [ ] Add load balancer, and deploy using default vpc
 - [ ] cloudwatch logs

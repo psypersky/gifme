@@ -41,3 +41,6 @@ Flask production - https://vsupalov.com/flask-web-server-in-production/
 Greenlets vs threads - https://stackoverflow.com/questions/15556718/greenlet-vs-threads
 Async Flask - https://pgjones.gitlab.io/quart/index.html
 JSON web tokens vuln - https://auth0.com/blog/critical-vulnerabilities-in-json-web-token-libraries/
+
+https://flask.palletsprojects.com/en/1.1.x/
+https://github.com/Zulko/moviepy

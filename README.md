@@ -56,6 +56,3 @@ curl -X POST localhost:5000/bale
 
 __Build__
 `docker build -f dev.Dockerfile -t gifme .`
-
-https://flask.palletsprojects.com/en/1.1.x/
-https://github.com/Zulko/moviepy

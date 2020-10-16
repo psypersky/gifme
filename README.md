@@ -56,3 +56,13 @@ curl -X POST localhost:5000/bale
 
 __Build__
 `docker build -f dev.Dockerfile -t gifme .`
+
+## Test
+
+docker run -it -p 5000:5000 -v $(pwd):/gifme gifme-dev python3 -m unittest discover test
+
+docker run -it -p 5000:5000 -v $(pwd):/gifme gifme-dev python3 -m unittest test/example.py
+
+## Other
+
+docker run -it -p 5000:5000 -v $(pwd):/gifme gifme-dev sh

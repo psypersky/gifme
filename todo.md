@@ -18,6 +18,7 @@
 - [x] redefine the api
 - [x] new foldering/blueprint structure
 - [x] create cluster, task definition, service and deploy with aws cli
+- [ ] Add example unit tests
 - [ ] abstract script to do all aws work with cli
 - [ ] slack authentication
 - [ ] Add load balancer, and deploy using default vpc

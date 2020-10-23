@@ -10,9 +10,13 @@ curl -d "param1=value1&param2=value2" -X POST http://localhost:3000/data
 
 @blueprint.route("/gifme", methods=["POST"])
 def gifme():
-    print(str(request.args))
-    return str(request.args)
+    cmd_text = request.form.get('text')
+
     # return str(request.args)
+    return jsonify(
+        response_type='in_channel',
+        text=str(request.form)
+    )
     # return jsonify(
     #     response_type='in_channel',
     #     attachments=[
@@ -22,3 +26,4 @@ def gifme():
     #         }
     #     ]
     # )
+

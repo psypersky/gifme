@@ -19,7 +19,11 @@
 - [x] new foldering/blueprint structure
 - [x] create cluster, task definition, service and deploy with aws cli
 - [x] Add example unit tests
-- [ ] check what Slack sends to gifme
+- [x] enable logs in ECS
+- [x] check what Slack sends to gifme
+- [ ] give api s3 access
+- [ ] ad a json logger
+- [ ] set up a load balancer to have an static ip :/ $$, there seems to be no other way for ECS w fargate
 - [ ] implement gifme command using S3 with some random gifs without auth
 - [ ] cloudwatch logs
 - [ ] use pipenv to run commands https://pipenv-fork.readthedocs.io/en/latest/
@@ -52,3 +56,5 @@ https://www.programcreek.com/python/example/63694/mock.patch.object
 http://www.ines-panker.com/2020/06/01/python-mock.html
 
 https://palletsprojects.com/
+https://dev.mikamai.com/2016/12/07/elastic-ip-address-eip-and-ecs-ec2-container/
+https://medium.com/galvanize/static-ip-applications-on-aws-ecs-c7d411421d4f

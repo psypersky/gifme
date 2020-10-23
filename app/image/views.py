@@ -1,4 +1,4 @@
-from flask import Blueprint, request
+from flask import Blueprint, request, jsonify
 
 blueprint = Blueprint('image', __name__, url_prefix='/image')
 """
@@ -10,7 +10,9 @@ curl -d "param1=value1&param2=value2" -X POST http://localhost:3000/data
 
 @blueprint.route("/gifme", methods=["POST"])
 def gifme():
+    print(str(request.args))
     return str(request.args)
+    # return str(request.args)
     # return jsonify(
     #     response_type='in_channel',
     #     attachments=[

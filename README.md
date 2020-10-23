@@ -50,7 +50,7 @@ curl -X POST localhost:5000/health/ping
 
 curl localhost:5000/health/check
 
-curl -X POST localhost:5000/bale
+curl -X POST localhost:5000/image/gifme?some=argument
 
 ## Prod
 

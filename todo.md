@@ -19,14 +19,11 @@
 - [x] new foldering/blueprint structure
 - [x] create cluster, task definition, service and deploy with aws cli
 - [x] Add example unit tests
-- [ ] examples on how to use Mock
-- [ ] abstract script to do all aws work with cli
-- [ ] slack authentication
-- [ ] Add load balancer, and deploy using default vpc
+- [ ] check what Slack sends to gifme
+- [ ] implement gifme command using S3 with some random gifs without auth
 - [ ] cloudwatch logs
-- [ ] play with aws vpcs scripts
-- [ ] play with aws iam scripts
 - [ ] use pipenv to run commands https://pipenv-fork.readthedocs.io/en/latest/
+- [ ] read about flask contexts https://testdriven.io/blog/flask-contexts/
 
 - [ ] ECS CLI V2
 https://aws.amazon.com/blogs/containers/announcing-the-amazon-ecs-cli-v2/
@@ -46,3 +43,12 @@ JSON web tokens vuln - https://auth0.com/blog/critical-vulnerabilities-in-json-w
 
 https://flask.palletsprojects.com/en/1.1.x/
 https://github.com/Zulko/moviepy
+
+Testing
+https://chromium.googlesource.com/external/github.com/google/oauth2client/+/master/tests/contrib/test_flask_util.py
+https://gist.github.com/papaeye/5656071
+https://docs.github.com/en/free-pro-team@latest/github/searching-for-information-on-github/searching-code
+https://www.programcreek.com/python/example/63694/mock.patch.object
+http://www.ines-panker.com/2020/06/01/python-mock.html
+
+https://palletsprojects.com/

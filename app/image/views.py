@@ -11,7 +11,10 @@ curl -d "param1=value1&param2=value2" -X POST http://localhost:3000/data
 @blueprint.route("/gifme", methods=["POST"])
 def gifme():
     cmd_text = request.form.get('text')
-
+    cmd_arr = cmd_text.split()
+    bucket = cmd_arr[0]
+    image = cmd_arr[1]
+    # TODO: get image from s3
     # return str(request.args)
     return jsonify(
         response_type='in_channel',

@@ -21,6 +21,7 @@
 - [x] Add example unit tests
 - [x] enable logs in ECS
 - [x] check what Slack sends to gifme
+- [ ] find out how to use patch.object correctly
 - [ ] give api s3 access
 - [ ] ad a json logger
 - [ ] set up a load balancer to have an static ip :/ $$, there seems to be no other way for ECS w fargate
@@ -28,7 +29,6 @@
 - [ ] cloudwatch logs
 - [ ] use pipenv to run commands https://pipenv-fork.readthedocs.io/en/latest/
 - [ ] read about flask contexts https://testdriven.io/blog/flask-contexts/
-
 - [ ] ECS CLI V2
 https://aws.amazon.com/blogs/containers/announcing-the-amazon-ecs-cli-v2/
 https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-cli-tutorial-fargate.html

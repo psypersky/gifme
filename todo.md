@@ -30,6 +30,7 @@
 - [ ] use pipenv to run commands https://pipenv-fork.readthedocs.io/en/latest/
 - [ ] read about flask contexts https://testdriven.io/blog/flask-contexts/
 - [ ] ECS CLI V2
+- [ ] setup production env
 https://aws.amazon.com/blogs/containers/announcing-the-amazon-ecs-cli-v2/
 https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-cli-tutorial-fargate.html
 

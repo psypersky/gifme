@@ -16,9 +16,10 @@ def gifme():
     image = cmd_arr[1]
     # TODO: get image from s3
     # return str(request.args)
+    print(str(request.form))
     return jsonify(
         response_type='in_channel',
-        text=str(request.form)
+        text='We are looking for help in Upty, if you want to learn some python in your free time, please contact @ruben'
     )
     # return jsonify(
     #     response_type='in_channel',

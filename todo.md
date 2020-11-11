@@ -21,6 +21,7 @@
 - [x] Add example unit tests
 - [x] enable logs in ECS
 - [x] check what Slack sends to gifme
+- [ ] set docker environment variables using an .env file
 - [ ] find out how to use patch.object correctly
 - [ ] give api s3 access
 - [ ] ad a json logger

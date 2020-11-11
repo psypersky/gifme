@@ -1,1 +1,3 @@
 Flask==1.1.2
+boto3==1.16.14
+environs==9.2.0

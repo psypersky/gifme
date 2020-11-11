@@ -21,7 +21,9 @@
 - [x] Add example unit tests
 - [x] enable logs in ECS
 - [x] check what Slack sends to gifme
-- [ ] set docker environment variables using an .env file
+- [x] set docker environment variables using an .env file
+- [x] code first version of ls slash command
+- [x] deploy
 - [ ] find out how to use patch.object correctly
 - [ ] give api s3 access
 - [ ] ad a json logger

@@ -2,7 +2,8 @@ from flask import Flask, jsonify, request
 
 from app import health, image
 
-from app.config.main import *
+# from app.setting import *
+# TODO: setup flask config using environ
 
 app = Flask(__name__)
 

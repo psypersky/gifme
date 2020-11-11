@@ -52,6 +52,8 @@ curl localhost:5000/health/check
 
 curl -X POST localhost:5000/image/gifme -d "text=foo bar"
 
+curl -X POST localhost:5000/image/gifme -d "text=ls"
+
 ## Prod
 
 __Build__

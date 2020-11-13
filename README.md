@@ -17,9 +17,9 @@ A slack bot
 **image**  
 `POST /image/slack/cmd - slack-auth - Slack /gifme`  
 `  Slack /gifme ls`  
-`  Slack /gifme <bucket> ls`  
-`  Slack /gifme <bucket> <image-name>`  
-`POST image/cli/bucket/upload - user-auth`  
+`  Slack /gifme <folder> ls`  
+`  Slack /gifme <folder> <image-name>`  
+`POST image/cli/folder/upload - user-auth`  
 
 ### CLI
 
@@ -32,8 +32,8 @@ gifme login
     pin: 2736
 successfully logged in to Gifme Bot
 
-gifme image upload <bucket-name> <image-name> <filename>
-gifme image delete <bucket-name> <image-name>
+gifme image upload <folder-name> <image-name> <filename>
+gifme image delete <folder-name> <image-name>
 ```
 
 ## Dev
@@ -54,10 +54,17 @@ curl -X POST localhost:5000/image/gifme -d "text=foo bar"
 
 curl -X POST localhost:5000/image/gifme -d "text=ls"
 
+curl -X POST localhost:5000/image/gifme -d "text=britney what.gif"
+
 ## Prod
 
 __Build__
 `docker build -f dev.Dockerfile -t gifme .`
+
+## Environment variables
+
+Create an s3 bucket
+Upload .env file
 
 ## Test
 

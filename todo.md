@@ -24,6 +24,8 @@
 - [x] set docker environment variables using an .env file
 - [x] code first version of ls slash command
 - [x] deploy
+- [x] first version of the image command
+- [ ] setup env vars on ecs task
 - [ ] find out how to use patch.object correctly
 - [ ] give api s3 access
 - [ ] ad a json logger

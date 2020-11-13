@@ -1,6 +1,6 @@
 from flask import Blueprint, request, jsonify
 
-from app.lib.s3 import list_bucket_object_keys
+from app.lib.s3 import list_bucket_object_keys, check_if_image_exists
 
 blueprint = Blueprint('image', __name__, url_prefix='/image')
 """
@@ -8,6 +8,13 @@ Slack sends a POST message with Content-type: application/x-www-form-urlencoded
 
 curl -d "param1=value1&param2=value2" -X POST http://localhost:3000/data
 """
+
+
+def command_not_found_res():
+    return jsonify(
+        response_type='in_channel',
+        text='Command not found or incorrect, please RTFD :)'
+    )
 
 
 @blueprint.route("/gifme", methods=["POST"])
@@ -29,12 +36,32 @@ def gifme():
                 response_type='in_channel',
                 text=keys_txt
             )
-        
+
+        return command_not_found_res()
+
+    if (len(cmd_arr) == 2):
+        ext = '.gif'
+        folder = cmd_arr[0]
+        image = cmd_arr[1]
+        image_key = folder + '/' + image + ext
+        img_exists = check_if_image_exists(image_key)
+
+        if (img_exists):
+
+            return jsonify(
+                response_type='in_channel',
+                attachments=[
+                    {
+                        "fallback": "a gif image",
+                        "image_url": f'https://gifme-public.s3.us-east-2.amazonaws.com/{image_key}'
+                    }
+                ]
+            )
+
         return jsonify(
             response_type='in_channel',
-            text='Command not found or incorrect, please RTFD :)'
+            text='Image not found :\'( try using "ls" command'
         )
-
 
     # bucket = cmd_arr[0]
     # image = cmd_arr[1]
@@ -46,12 +73,3 @@ def gifme():
         response_type='in_channel',
         text='We are looking for help in Upty, if you want to learn some python in your free time, please contact @ruben'
     )
-    # return jsonify(
-    #     response_type='in_channel',
-    #     attachments=[
-    #         {
-    #             "fallback": "sad but true gif image",
-    #             "image_url": "https://gifme-public.s3.us-east-2.amazonaws.com/ezgif.com-gif-maker.gif"
-    #         }
-    #     ]
-    # )
